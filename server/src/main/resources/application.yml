@@ -1,0 +1,56 @@
+server:
+  port: 10086
+  address: 127.0.0.1
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.common.server.domain
+spring:
+  application:
+    name: tizhi
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/tizhi_db2?useUnicode=true&characterEncoding=UTF8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 12345678
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1ms
+        max-idle: 4
+        min-idle: 0
+  data:
+    elasticsearch:
+      cluster-name: elasticsearch
+      cluster-nodes: 127.0.0.1:9300
+  jackson:
+    default-property-inclusion: non_null
+  thymeleaf:
+    cache: false
+  rabbitmq:
+    addresses: 127.0.0.1
+    template:
+      exchange: SHOP.GOODS.EXCHAGE
+    virtual-host: /
+    port: 15672
+  mvc:
+    static-path-pattern: /imgs/**
+  resources:
+    static-locations: classpath:/imgs/
+shop:
+  worker:
+    workerId: 1
+    datacenterId: 1
+
+
+
+
+

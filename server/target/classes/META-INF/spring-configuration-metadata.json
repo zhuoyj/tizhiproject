@@ -1,0 +1,22 @@
+{
+  "groups": [
+    {
+      "name": "shop.worker",
+      "type": "com.common.server.domain.pro.IdWorkerProperties",
+      "sourceType": "com.common.server.domain.pro.IdWorkerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shop.worker.datacenter-id",
+      "type": "java.lang.Long",
+      "sourceType": "com.common.server.domain.pro.IdWorkerProperties"
+    },
+    {
+      "name": "shop.worker.worker-id",
+      "type": "java.lang.Long",
+      "sourceType": "com.common.server.domain.pro.IdWorkerProperties"
+    }
+  ],
+  "hints": []
+}
